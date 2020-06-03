@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> CSS STANDARDS
+----------------------------------------------------------------
+1. Place in appropriate section
+2. Add new sections to the Table of Contents as needed
+3. Order properties consistently inside each declaration i.e. alphabetically or by function 
+4. Declaration selectors should each occupy a new line
+5. Enter one new line between rules
+6. Enter more than one new line between categories 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment	    
+        - Color
+        - Size
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+3.0 GENERIC
+-------------------------------------------------------------- */
+
+/* -- BOX-SIZING -- */ 
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-mozilla-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+
+/* -- FORMS -- */ 
+
+/*--------------------------------------------------------------
+5.0 OBJECTS
+-------------------------------------------------------------- */
+
+/* -- FRAMEWORK -- */ 
+
+.wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	background-clip: content-box;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.col-sm-1 {
+	width: calc(100% * 1/12);
+	
+}
+
+.col-sm-2 {
+	width: calc(100% * 2/12);
+	
+}
+
+.col-sm-3 {
+	width: calc(100% * 3/12)
+}
+
+.col-sm-4 {
+	width: calc(100% * 4/12)
+}
+
+.col-sm-5 {
+	width: calc(100% * 5/12)
+}
+
+.col-sm-6 {
+	width: calc(100% * 6/12)
+}
+
+.col-sm-7 {
+	width: calc(100% * 7/12)
+}
+
+.col-sm-8 {
+	width: calc(100% * 8/12)
+}
+
+.col-sm-9 {
+	width: calc(100% * 9/12)
+}
+
+.col-sm-10 {
+	width: calc(100% * 10/12)
+}
+
+.col-sm-11 {
+	width: calc(100% * 11/12)
+}
+
+.col-sm-12 {
+	width: calc(100% * 12/12)
+}
+
+@media screen and (min-width: 768px) {
+	
+	.wrapper {
+		width: 90%;
+	}
+	
+	.col-md-1 {
+		width: calc(100% * 1/12);
+	
+	}
+
+    .col-md-2 {
+        width: calc(100% * 2/12);
+	
+	}
+
+    .col-md-3 {
+        width: calc(100% * 3/12)
+	}
+	
+	.col-md-4 {
+        width: calc(100% * 4/12)
+    }
+
+    .col-md-5 {
+        width: calc(100% * 5/12)
+    }
+
+    .col-md-6 {
+        width: calc(100% * 6/12)
+    }
+
+    .col-md-7 {
+        width: calc(100% * 7/12)
+    }
+
+    .col-md-8 {
+        width: calc(100% * 8/12)
+    }
+
+    .col-md-9 {
+        width: calc(100% * 9/12)
+    }
+
+    .col-md-10 {
+        width: calc(100% * 10/12)
+    }
+
+    .col-md-11 {
+        width: calc(100% * 11/12)
+    }
+
+    .col-md-12 {
+        width: calc(100% * 12/12)
+    }
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.wrapper {
+		width: 80%;
+	}
+	
+	.col-lg-1 {
+		width: calc(100% * 1/12);
+	
+	}
+
+	.col-lg-2 {
+		width: calc(100% * 2/12);
+	
+	}
+
+	.col-lg-3 {
+		width: calc(100% * 3/12)
+	}
+	
+	.col-lg-4 {
+        width: calc(100% * 4/12)
+    }
+
+    .col-lg-5 {
+        width: calc(100% * 5/12)
+    }
+
+    .col-lg-6 {
+        width: calc(100% * 6/12)
+    }
+
+    .col-lg-7 {
+        width: calc(100% * 7/12)
+    }
+
+    .col-lg-8 {
+        width: calc(100% * 8/12)
+    }
+
+    .col-lg-9 {
+        width: calc(100% * 9/12)
+    }
+
+    .col-lg-10 {
+        width: calc(100% * 10/12)
+    }
+
+    .col-lg-11 {
+        width: calc(100% * 11/12)
+    }
+
+    .col-lg-12 {
+        width: calc(100% * 12/12)
+    }
+}
+/*--------------------------------------------------------------
+6.0 COMPONENTS 
+-------------------------------------------------------------- */
+#bg-campfire-2 {
+	background-image: url("../img/campfire-2-3@2x.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+}
+
+#bg-campfire-3 {
+	background-image: url("../img/campfire-2-3@2x.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+
+
+/*--------------------------------------------------------------
+7.0 UTILITIES
+-------------------------------------------------------------- */
+
+/* -- RANDO OVERRIDES -- */ 

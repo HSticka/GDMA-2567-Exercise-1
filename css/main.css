@@ -56,10 +56,31 @@
 
 /* -- FONTS-- */ 
 
+li {
+	display: inline-block;
+}
 
+a {
+	text-decoration: none;
+}
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
+
+/* HEADER */
+
+header nav {
+	text-align: center;
+	margin: 2em 0;
+}
+
+#btn-purple {
+	float: right;
+}
+
+.display-lg, .display-md {
+	display: none;
+}
 
 /* -- FORMS -- */ 
 
@@ -89,3 +110,17 @@
 /* -- MEDIA QUERIES-- */ 
 
 
+@media screen and (min-width: 1024px) {
+	.display-lg {
+		display: block;		
+	}
+	
+		
+}
+
+@media screen and (min-width: 728px) {
+	
+	.display-md {
+		display: block;
+	}
+}
