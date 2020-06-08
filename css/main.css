@@ -55,6 +55,9 @@
 -------------------------------------------------------------- */
 
 /* -- FONTS-- */ 
+* {
+	font-family: 'Muli', sans-serif;
+}
 
 li {
 	display: inline-block;
@@ -62,6 +65,22 @@ li {
 
 a {
 	text-decoration: none;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 900;
+	text-transform: capitalize;
+	color: #07507F;
+}
+
+i {
+	color: #DB05A4;
+	font-size: 3rem;
+}
+
+h3 {
+	font: normal #07507F;
 }
 /*--------------------------------------------------------------
 4.0 - ELEMENTS 
@@ -74,14 +93,27 @@ header nav {
 	margin: 2em 0;
 }
 
-#btn-purple {
-	float: right;
+header li a {
+	font-size: 1.25em;
+	padding-right: 10px;
+	color: #07507F;
 }
 
-.display-lg, .display-md {
-	display: none;
+/* ABOUT */
+
+#about header, #pricing header {
+	text-align: center;
 }
 
+
+
+#olivia {
+	-webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+}
 /* -- FORMS -- */ 
 
 
@@ -96,13 +128,89 @@ header nav {
 -------------------------------------------------------------- */
 
 /* -- HEADER-- */
-
+header li a:hover {
+	color: #DB05A4;
+}
 /* -- NAV -- */ 
 
 /* -- BUTTONS -- */
 
+
+
+#btn-purple, .btn-pink {    
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;    
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 25px 5px;
+}
+
+#btn-purple {
+	background-color:#6305AA;
+	padding: 15px;
+	margin-top: 25px;
+}
+
+.btn-pink {
+	background-color: #DB05A4;
+	padding: 10px 20px;
+	margin-top: 25px;
+}
+
+#btn-purple span, .btn-pink span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+#btn-purple span:after, .btn-pink span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+#btn-purple:hover span, .btn-pink:hover span {
+padding-right: 25px;
+	color: #F7CF01;
+}
+
+#btn-purple:hover span:after, .btn-pink:hover span:after {
+opacity: 1;
+right: 0;
+}
 /* -- FOOTER -- */
 
+footer i {
+	font-size: 1rem;
+}
+
+footer li {
+	display: block;
+}
+
+footer span {
+	display: none;
+}
+
+footer #social li {
+	display: inline-block;
+}
+
+footer section:last-child {
+	padding: 10px;
+}
 /*--------------------------------------------------------------
 7.0 UTILITIES
 -------------------------------------------------------------- */
@@ -115,6 +223,10 @@ header nav {
 		display: block;		
 	}
 	
+	#home {
+      background: url("../img/bg-hero.jpg") no-repeat right/contain;
+    }
+
 		
 }
 
